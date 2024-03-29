@@ -1,39 +1,22 @@
 {
   "messages": [
     {
-      "message": "hello world",
-      "author": "test",
-      "image": null
+      "id": "ef15c9a0-82bc-4335-bdaa-f9aaa8f676d6",
+      "message": "wwww",
+      "author": "wwafafa",
+      "image": "images3d836f65-934c-4879-839d-6e96b718c959.png"
     },
     {
-      "id": "22c2088a-a1ef-4f7a-b847-7081cc0fe69f",
-      "message": "ab",
-      "author": "test",
-      "image": "images27734e14-4f4d-43c7-90ee-cb46fddf99d0.jpg"
+      "id": "279c9dca-d53a-4b1d-b7ee-f2dc607de330",
+      "message": "hfmm",
+      "author": "g,g,g,",
+      "image": "imagesbf7bb90b-e753-46f3-8853-b1d1b9407e17.png"
     },
     {
-      "id": "f3e21014-e4c0-40de-b516-8f3900e73fd9",
-      "message": "ab",
-      "author": "test",
-      "image": null
-    },
-    {
-      "id": "05794e75-06cd-40d2-bfdd-adba0c48d239",
-      "message": "ab",
-      "author": "test",
-      "image": null
-    },
-    {
-      "id": "1e58d552-201c-40a7-b1f3-d72c33e40a95",
-      "message": "ab7890",
-      "author": "test",
-      "image": null
-    },
-    {
-      "id": "bb8000f6-df16-40fe-a27f-45fb25cd944c",
-      "message": "ab7890",
-      "author": "test",
-      "image": "images87f35c23-ebb1-4a29-a4d3-4ba28ff20464.jpg"
+      "id": "5c23fb1d-7b7e-4f7b-bf78-5f93c01aa3e3",
+      "message": "фффф",
+      "author": "цуирцрцр",
+      "image": "images1b20ad76-4563-4298-af0c-d69ee8b662a9.png"
     }
   ]
 }

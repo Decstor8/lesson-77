@@ -8,7 +8,7 @@ const port = 8000;
 app.use(cors())
 app.use(express.json());
 app.use('/messages', messagesRouter);
-app.use(express.static('public'));
+app.use(express.static('public/images'));
 
 app.listen(port, () => {
     console.log(`Сервер запущен на порту ${port}`);

@@ -1,9 +1,7 @@
 import { Request, Response, Router } from 'express';
 import { imagesUpload } from '../multer';
-// import { Message } from '../types';
 const fs = require('fs');
-
-const messageDirectory = './messages';
+import { Message } from '../types';
 const messagesRouter = Router();
 
 messagesRouter.post('/',imagesUpload.single('file') ,async (req, res) => {
@@ -12,9 +10,8 @@ messagesRouter.post('/',imagesUpload.single('file') ,async (req, res) => {
     if (!req.body.message) {
         return res.status(400).send({'error': 'Error'});
     }
-    console.log(req.body);
     
-    const newMessage: any = {
+    const newMessage: Message = {
         id: crypto.randomUUID(),
         message, 
         author : author || 'Anonumys', 
@@ -36,15 +33,14 @@ messagesRouter.post('/',imagesUpload.single('file') ,async (req, res) => {
     });
 });
 
-messagesRouter.get('/', (req: Request, res: Response) => {
-
+messagesRouter.get('/', (_, res: Response) => {
     fs.readFile('db.json', (err: Error, data: string) => {
         if (err) {
             return res.status(500).json({error: 'Внутренняя ошибка сервера'});
         };
 
         const db = JSON.parse(data.toString());
-        let messages = db.messages || [];
+        let messages = db.messages || [];  
         res.json(messages);
     });
 });
